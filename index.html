@@ -16,12 +16,16 @@
     <div class="wrapper">
       <header>
           <p class="view"><a href="javascript:
-          window.open('http://www.reddit.com/r/thebutton'); 
+          window.open("http://www.reddit.com/r/thebutton"); 
+          function bar(){
+          setTimeout(foo, 1500); 
+          }
           function foo(){
+          alert("yay"); 
                   $(".locked").removeClass("locked"); 
                           $("#thebutton").click();
                                   } 
-                                          foo();">DRAG THIS LINK TO BOOKMARKS BAR</a></p>
+                                          bar();">DRAG THIS LINK TO BOOKMARKS BAR</a></p>
 
       </header>
     </div>
